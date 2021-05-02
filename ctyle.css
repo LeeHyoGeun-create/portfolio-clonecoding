@@ -34,6 +34,7 @@
 }
 
 /* Typography */
+/* 웹 사이트에 전반적으로 쓰여진 패딩이나 텍스트 스타일링*/
 
 h1 {
   font-size: var(--font-large);
