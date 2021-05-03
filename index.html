@@ -44,56 +44,65 @@
         </section>
 
         <!-- about -->
-        <section id="about">
+        <section id="about" class="section">
             <h1>About me</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere asperiores
                 assumenda debitis unde culpa ad? Fuga, maiores doloremque facilis est molestiae
                 adipisci reiciendis blanditiis dolore cupiditate commodi qui mollitia
                 repudiandae?</p>
             <div class="about__majors">
-                <div class="major"></div>
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="major__title">Front-end</div>
+                    <div class="major__description">
+                        HTML, CSS, JavaScript, TypeScript,
+                        <br/>React, Vue, Web APIs
+                    </div>
                 </div>
-                <div class="major__title">Front-end</div>
-                <div class="major__description">
-                    HTML, CSS, JavaScript, TypeScript,
-                    <br/>React, Vue, Web APIs
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="major__title">Mobile</div>
+                    <div class="major__description">
+                        Android, IOS, React Native, Flutter,
+                        <br/>Java, Swift, Kotlin
+                    </div>
                 </div>
-                <div class="major"></div>
-                <div class="major__icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="major__title">Mobile</div>
-                <div class="major__description">
-                    Android, IOS, React Native, Flutter,
-                    <br/>Java, Swift, Kotlin
-                </div>
-                <div class="major"></div>
-                <div class="major__icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <div class="major__title">Back-end</div>
-                <div class="major__description">
-                    Java, JavaScript, Go, NodeJS,
-                    <br/>Rest APIs, GraghGL
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="major__title">Back-end</div>
+                    <div class="major__description">
+                        Java, JavaScript, Go, NodeJS,
+                        <br/>Rest APIs, GraghGL
+                    </div>
                 </div>
             </div>
             <div class="about__jobs">
                 <div class="job">
-                    <img src="/imgs/favicon.png" alt="company" class="job__log">
-                    <p class="job__name">Currently working at Samsung as Software Engineer</p>
-                    <p class="job__period">2019 Sept - Until now</p>
+                    <img src="/imgs/favicon.png" alt="company" class="job__logo">
+                    <div class="job__description">
+                        <p class="job__name">Currently working at Samsung as Software Engineer</p>
+                        <p class="job__period">2019 Sept - Until now</p>
+                    </div>
+
                 </div>
                 <div class="job">
-                    <img src="/imgs/favicon.png" alt="company" class="job__log">
-                    <p class="job__name">Currently working at Samsung as Software Engineer</p>
-                    <p class="job__period">2019 Sept - Until now</p>
+                    <img src="/imgs/favicon.png" alt="company" class="job__logo">
+                    <div class="job__description">
+                        <p class="job__name">Currently working at Samsung as Software Engineer</p>
+                        <p class="job__period">2019 Sept - Until now</p>
+                    </div>
+
                 </div>
             </div>
         </section>
         <!-- skills -->
-        <section id="skills">
+        <section id="skills" class="section">
             <h1>Skills</h1>
             <h2>Skills & Attributes</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt fuga
@@ -187,7 +196,7 @@
             </div>
         </section>
         <!-- work -->
-        <section id="work">
+        <section id="work" class="section">
             <div class="work__categories">
                 <button class="category__btn">All<span class="category__count">8/span></button>
                     <button class="category__btn">Front-end<span class="category__count">3</span></button>
@@ -254,33 +263,49 @@
                 </div>
             </section>
             <!-- testimonials -->
-        <section id="testimonials">
-          <div class="testimonial">
-            <img src="imgs/testimonial/people1-200515-154332.jpg" alt="People" class="testimonial__avtar">
-            <div class="testimonial__speech-bubble">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore non, dicta veniam maxime exercitationem illum ea sapiente nisi! Nihil tempora totam eveniet voluptas voluptatem delectus a cumque in ea dolores?</p>
-              <p class="name"><a href="">Ellie</a>Samsung</p>
-            </div>
-          </div>
-          <div class="testimonial">
-            <img src="imgs/testimonial/people1-200515-154332.jpg" alt="People" class="testimonial__avtar">
-            <div class="testimonial__speech-bubble">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore non, dicta veniam maxime exercitationem illum ea sapiente nisi! Nihil tempora totam eveniet voluptas voluptatem delectus a cumque in ea dolores?</p>
-              <p class="name"><a href="">Ellie</a>Samsung</p>
-            </div>
-          </div>
-        </section>
+            <section id="testimonials" class="section">
+                <div class="testimonial">
+                    <img
+                        src="imgs/testimonial/people1-200515-154332.jpg"
+                        alt="People"
+                        class="testimonial__avtar">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore non, dicta
+                            veniam maxime exercitationem illum ea sapiente nisi! Nihil tempora totam eveniet
+                            voluptas voluptatem delectus a cumque in ea dolores?</p>
+                        <p class="name">
+                            <a href="">Ellie</a>Samsung</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img
+                        src="imgs/testimonial/people1-200515-154332.jpg"
+                        alt="People"
+                        class="testimonial__avtar">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore non, dicta
+                            veniam maxime exercitationem illum ea sapiente nisi! Nihil tempora totam eveniet
+                            voluptas voluptatem delectus a cumque in ea dolores?</p>
+                        <p class="name">
+                            <a href="">Ellie</a>Samsung</p>
+                    </div>
+                </div>
+            </section>
             <!-- contact -->
-        <section id="contact">
-          <h1 class="contact__title">Let's talk</h1>
-          <h2 class="contact__email">dream.coder.ellie@gmail.com</h2>
-          <div class="contact__links">
-            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-linkedin-square"></i></a>
-          </div>
-          <p class="contact__rights">2020 Dream Coding Ellie - All rights reserved
-            
-          </p>
-        </section>
+            <section id="contact" class="section">
+                <h1 class="contact__title">Let's talk</h1>
+                <h2 class="contact__email">dream.coder.ellie@gmail.com</h2>
+                <div class="contact__links">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="fab fa-linkedin-square"></i>
+                    </a>
+                </div>
+                <p class="contact__rights">2020 Dream Coding Ellie - All rights reserved
+
+                </p>
+            </section>
         </body>
     </html>
