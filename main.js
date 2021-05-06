@@ -2,6 +2,7 @@
 
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
+const contactBtn = document.querySelector(".home__contact");
 
 //Make navbar transparent when it is on the top
 document.addEventListener("scroll", () => {
@@ -23,7 +24,17 @@ navbarMenu.addEventListener("click", (event) => {
     return;
   } else {
     console.log(link);
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({ behavior: "smooth" });
+    scrollIntoView(link);
   }
 });
+
+// Handle click on "contact me" button on home
+contactBtn.addEventListener("click", () => {
+  const link = contactBtn.dataset.link;
+  scrollIntoView(link);
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
