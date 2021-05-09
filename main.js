@@ -22,10 +22,15 @@ navbarMenu.addEventListener("click", (event) => {
   const link = target.dataset.link;
   if (link == null) {
     return;
-  } else {
-    console.log(link);
-    scrollIntoView(link);
   }
+  navbar.classList.remove("open");
+  scrollIntoView(link);
+});
+
+//Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", (e) => {
+  navbarMenu.classList.toggle("open");
 });
 
 // Handle click on "contact me" button on home
