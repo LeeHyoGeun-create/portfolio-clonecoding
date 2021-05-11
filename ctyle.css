@@ -96,13 +96,12 @@ p {
 /* Navbar */
 #navbar {
   position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
   align-items: center;
-  width: 100%;
-  color: var(--color-white);
   padding: 16px;
+  background-color: transparent;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
 }
@@ -114,6 +113,7 @@ p {
 
 .navbar__menu {
   display: flex;
+  margin: 0;
 }
 
 .navbar__menu.open {
@@ -128,14 +128,18 @@ p {
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
+  color: var(--color-white);
   cursor: pointer;
   border-radius: var(--size-border-radius);
-  border: 1px solid transparent;
 }
 
 .navbar__menu__item:hover {
+  border-color: var(--color-white);
   background-color: var(--color-dark-pink);
-  border-color: white;
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
 }
 
 .navbar__toggle-btn {
